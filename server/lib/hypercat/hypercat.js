@@ -78,7 +78,7 @@ module.exports = (function() {
                                 // Loop through metadata properties
                                 for (j = 0; j < itemMetadata.length; j += 1) {
                                     prop = itemMetadata[j];
-                                    if (prop.rel === 'urn:X-hypercat:rels:hasDescription:en') {
+                                    if (prop.rel.startsWith('urn:X-hypercat:rels:hasDescription:')) {
                                         descriptionFound = true;
                                     }
 
